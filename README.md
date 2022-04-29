@@ -1380,18 +1380,11 @@ Dev:保存开发过程中的代码。
 
 ### 参考资料：
 
-[Git(linux)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV19J411j7SZ?p=7)
-
-[OneSizeFitsQuorum/git-tips: 33 条常用 git 命令详解 ](https://github.com/OneSizeFitsQuorum/git-tips)
-
-[Githug](https://github.com/Gazler/githug)
-
-[learnGitBranching](https://github.com/pcottle/learnGitBranching)
-
-[Git原理入门解析 ](https://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&mid=2247489338&idx=2&sn=6fdd8968003b8f59d43c09b72894e877&chksm=ebd62816dca1a1003dcefb6dae8296dd08924426fa6f12d09b8695922007fcb9bfa342c35bd1&scene=21#wechat_redirect)
-
-[Git 从入门到精通，这一篇就够了](https://mp.weixin.qq.com/s/b8bQW2N5VC-qmGD4dTiwKQ)
-
-[Git - Book ](https://git-scm.com/book/zh/v2)
-
-[vim常用命令总结](https://www.cnblogs.com/yangjig/p/6014198.html)
+[Git(linux)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV19J411j7SZ?p=7)  
+[OneSizeFitsQuorum/git-tips: 33 条常用 git 命令详解 ](https://github.com/OneSizeFitsQuorum/git-tips)  
+[Githug](https://github.com/Gazler/githug)  
+[learnGitBranching](https://github.com/pcottle/learnGitBranching)  
+[Git原理入门解析 ](https://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&mid=2247489338&idx=2&sn=6fdd8968003b8f59d43c09b72894e877&chksm=ebd62816dca1a1003dcefb6dae8296dd08924426fa6f12d09b8695922007fcb9bfa342c35bd1&scene=21#wechat_redirect)  
+[Git 从入门到精通，这一篇就够了](https://mp.weixin.qq.com/s/b8bQW2N5VC-qmGD4dTiwKQ)  
+[Git - Book ](https://git-scm.com/book/zh/v2)  
+[vim常用命令总结](https://www.cnblogs.com/yangjig/p/6014198.html)  
