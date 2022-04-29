@@ -268,7 +268,7 @@ git add命令是把所有提交的修改存放到暂存区。
 [shuai@localhost git_test]$
 ```
 
-现在我们的版本库变成了这样：![image-20220427164406622](C:\Users\张晓帅\AppData\Roaming\Typora\typora-user-images\image-20220427164406622.png)
+现在我们的版本库变成了这样：![image-20220427164406622](https://github.com/ZX-shuai/Git/blob/main/img/image-20220427164406622.png)
 
 #### 5.3 管理修改
 
@@ -437,7 +437,7 @@ index 66f9219..324317f 100644
 
 ---代表HEAD版本中code.txt的内容，+++代表工作区中code.txt的内容，`+the new line`表示工作区code.txt比HEAD版本code.txt多了一行。
 
-![image-20220426224406262](https://github.com/ZX-shuai/Git/blob/main/img/image-20220426224406262.png)
+![image-20220427203705603](https://github.com/ZX-shuai/Git/blob/main/img/image-20220427203705603.png)
 
 
 （3）使用如下命令丢弃工作区的改动
@@ -470,7 +470,7 @@ index 66f9219..01e1274 100644
 
 可以看到`diff --git a/code.txt b/code.txt`。显示HEAD版本code.txt比HEAD^版本code.txt多了一行。
 
-![image-20220427205111412]()
+![image-20220427205111412](https://github.com/ZX-shuai/Git/blob/main/img/image-20220427205111412.png)
 
 #### 5.6 删除文件
 
@@ -528,7 +528,7 @@ rm 'code2.txt'
 
 如果两个平行宇宙互不干扰，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了git又学会了SVN！
 
-![image-20220429144004458](git.assets/image-20220429144004458.png)
+![image-20220429144004458](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429144004458.png)
 
 分支在实际中有什么用呢？假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了50%的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人不能干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。
 
@@ -538,21 +538,21 @@ rm 'code2.txt'
 
 git把我们之前每次提交的版本串成一条时间线，这条时间线就是一个分支。截止到目前只有一条时间线，在git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。
 
-(1) 一开始的时候，master分支是一条线，git用master指向最新的提交，再用HEAD指向master，就能确定当前分支，以及当前分支的提交点：![image-20220429144430189](git.assets/image-20220429144430189.png)
+(1) 一开始的时候，master分支是一条线，git用master指向最新的提交，再用HEAD指向master，就能确定当前分支，以及当前分支的提交点：![image-20220429144430189](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429144430189.png)
 
 每次提交，master分支都会向前移动一步，这样，随着你不断提交，master分支的线也越来越长。
 
-(2)当我们创建新的分支，例如dev时，git新建了一个指针叫dev，指向master相同的提交，再把HEAD指向dev，就表示当前分支在dev上：![image-20220429144446025](git.assets/image-20220429144446025.png)
+(2)当我们创建新的分支，例如dev时，git新建了一个指针叫dev，指向master相同的提交，再把HEAD指向dev，就表示当前分支在dev上：![image-20220429144446025](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429144446025.png)
 
 git创建一个分支很快，因为除了增加一个dev指针，改变HEAD的指向，工作区的文件都没有任何变化。
 
-(3)不过，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：![image-20220429144520783](git.assets/image-20220429144520783.png)
+(3)不过，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：![image-20220429144520783](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429144520783.png)
 
-(4)假如我们在dev上的工作完成了，就可以把dev合并到master上。git怎么合并呢？最简单的方法，就是直接把master指向dev的当前提交，就完成了合并：![image-20220429144543212](git.assets/image-20220429144543212.png)
+(4)假如我们在dev上的工作完成了，就可以把dev合并到master上。git怎么合并呢？最简单的方法，就是直接把master指向dev的当前提交，就完成了合并：![image-20220429144543212](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429144543212.png)
 
 git合并分支也很快，就改改指针，工作区内容也不变。
 
-(5)合并完分支后，甚至可以删除dev分支。删除dev分支就是把dev指针给删掉，删掉后，我们就剩下了一条master分支：![image-20220429144610552](git.assets/image-20220429144610552.png)
+(5)合并完分支后，甚至可以删除dev分支。删除dev分支就是把dev指针给删掉，删掉后，我们就剩下了一条master分支：![image-20220429144610552](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429144610552.png)
 
 **案例：**
 
@@ -575,7 +575,7 @@ git合并分支也很快，就改改指针，工作区内容也不变。
 [shuai@localhost git_test]$ 
 ```
 
-![image-20220429145836817](git.assets/image-20220429145836817.png)
+![image-20220429145836817](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429145836817.png)
 
 （3）在dev分支下，我们修改code.txt内容，在里面添加一行，并进行提交。
 
@@ -594,7 +594,7 @@ add one line
 [shuai@localhost git_test]$ 
 ```
 
-![image-20220429150107896](git.assets/image-20220429150107896.png)
+![image-20220429150107896](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429150107896.png)
 
 （4）使用`git checkout 分支名`切换分支
 
@@ -607,7 +607,7 @@ add one line
 [shuai@localhost git_test]$ 
 ```
 
-![image-20220429153156041](git.assets/image-20220429153156041.png)
+![image-20220429153156041](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429153156041.png)
 
 查看code.txt，发现添加的内容没有了。因为那个提交是在dev分支上，而master分支此刻的提交点并没有变：
 
@@ -643,7 +643,7 @@ add one line
 [shuai@localhost git_test]$
 ```
 
-![image-20220429153523572](git.assets/image-20220429153523572.png)
+![image-20220429153523572](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429153523572.png)
 
 注意到上面的Fast-forward信息，git告诉我们，这次合并是“快进模式”，也就是直接把master指向dev的当前提交，所以合并速度非常快。
 
@@ -657,7 +657,7 @@ add one line
 [shuai@localhost git_test]$
 ```
 
-![image-20220429153752063](git.assets/image-20220429153752063.png)
+![image-20220429153752063](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429153752063.png)
 
 **小结：**
 
@@ -729,7 +729,7 @@ add more line in master
 
 现在，master分支和dev分支各自都分别有新的提交，变成了这样：
 
-![image-20220429155347306](git.assets/image-20220429155347306.png)
+![image-20220429155347306](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429155347306.png)
 
 这种情况下，git无法执行“快速合并”，只能试图把各自的修改合并起来，但这种合并就可能会有冲突。
 
@@ -799,7 +799,7 @@ add one more line
 
 现在，master分支和dev分支变成了下图所示：
 
-![image-20220429160308284](git.assets/image-20220429160308284.png)
+![image-20220429160308284](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429160308284.png)
 
 （9）用`git log --graph --pretty=oneline`也可以看到分支的合并情况：
 
@@ -983,7 +983,7 @@ Merge made by the 'recursive' strategy.
 [shuai@localhost git_test]$
 ```
 
-![image-20220429163229210](git.assets/image-20220429163229210.png)
+![image-20220429163229210](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429163229210.png)
 
 #### 6.5 Bug分支
 
@@ -1128,11 +1128,11 @@ stash@{0}: WIP on dev: dc9a520 添加新行
 
 （1）点击账户头像后的下拉三角，选择'settings'
 
-![image-20220429171743920](git.assets/image-20220429171743920.png)
+![image-20220429171743920](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429171743920.png)
 
 （2）点击'SSH and GPG keys'，添加ssh公钥。
 
-![image-20220429171751211](git.assets/image-20220429171751211.png)
+![image-20220429171751211](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429171751211.png)
 
 （3）在CentOS的命令行中，回到用户的主目录下，编辑文件.gitconfig，修改机器的git配置，在2-（3）时已经配置过。
 
@@ -1198,13 +1198,13 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDtLI748gYryVGahrOgm+j/tkUr3s+pXpCxCagtlvpR
 
 （）回到浏览器中，填写标题，粘贴公钥
 
-![image-20220429175124246](git.assets/image-20220429175124246.png)
+![image-20220429175124246](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429175124246.png)
 
 ####  7.3 克隆项目
 
 （1）选中项目，复制git地址，注意选SSH
 
-![image-20220429175625970](git.assets/image-20220429175625970.png)
+![image-20220429175625970](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429175625970.png)
 
 （2）再命令行执行`git clone <git地址>`
 
@@ -1257,7 +1257,7 @@ README.md
 
 （3）推送前github分支列表如下：
 
-![image-20220429182716965](git.assets/image-20220429182716965.png)
+![image-20220429182716965](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429182716965.png)
 
 （4）推送分支，就是把该分支上的所有本地提交推送到远程库，推送时要指定本地分支，这样，git就会把该分支推送到远程库对应的远程分支上
 
@@ -1284,11 +1284,11 @@ To git@github.com:ZX-shuai/Git.git
 
 推送后变化如下：
 
-![image-20220429183404440](git.assets/image-20220429183404440.png)
+![image-20220429183404440](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429183404440.png)
 
 点击Compare&pull request可以看到提交的内容，点击Create pull request，推送和合并是在github上操作的。
 
-![image-20220429183513818](git.assets/image-20220429183513818.png)
+![image-20220429183513818](https://github.com/ZX-shuai/Git/blob/main/img/image-20220429183513818.png)
 
 ####  7.5 将本地分支跟踪服务器分支
 
