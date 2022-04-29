@@ -184,7 +184,7 @@ d8d7d7f7f4cf97273fd4fe0ba00b22e79262c1ca 版本1
 
 可以简单理解为，需要提交的文件修改通通放到暂存区，然后，一次性提交暂存区的所有修改。
 
-![image-20220426224406262](C:\Users\张晓帅\AppData\Roaming\Typora\typora-user-images\image-20220426224406262.png)
+![image-20220426224406262](https://github.com/ZX-shuai/Git/blob/main/img/image-20220426224406262.png)
 
 把文件往git版本库里添加的时候，是分两步执行的：
 
@@ -437,7 +437,8 @@ index 66f9219..324317f 100644
 
 ---代表HEAD版本中code.txt的内容，+++代表工作区中code.txt的内容，`+the new line`表示工作区code.txt比HEAD版本code.txt多了一行。
 
-![image-20220427203705603](C:\Users\张晓帅\AppData\Roaming\Typora\typora-user-images\image-20220427203705603.png)
+![image-20220426224406262](https://github.com/ZX-shuai/Git/blob/main/img/image-20220426224406262.png)
+
 
 （3）使用如下命令丢弃工作区的改动
 
@@ -469,7 +470,7 @@ index 66f9219..01e1274 100644
 
 可以看到`diff --git a/code.txt b/code.txt`。显示HEAD版本code.txt比HEAD^版本code.txt多了一行。
 
-![image-20220427205111412](C:\Users\张晓帅\AppData\Roaming\Typora\typora-user-images\image-20220427205111412.png)
+![image-20220427205111412]()
 
 #### 5.6 删除文件
 
